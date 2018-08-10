@@ -18,7 +18,7 @@ public class OrderTest {
 	@Test
 	public void productOrdering() {
 		Browser.openURL();
-		HeaderPage.choiceLanguage();
+		HeaderPage.selectfromStoreMenu("Куратори");
 		
 	}
 	/*

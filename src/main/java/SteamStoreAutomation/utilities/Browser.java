@@ -23,7 +23,7 @@ public class Browser {
 	 * TThis method navigate to the loading of url.
 	 */
 	public static void openURL() {
-		Browser.driver.get("https://store.steampowered.com/");
+		Browser.driver.get("https://store.steampowered.com/us-us");
 	}
 
 	/**
