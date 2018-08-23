@@ -1,5 +1,6 @@
 package SteamStoreAutomation.Steam;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -18,8 +19,7 @@ public class OrderTest {
 	@Test
 	public void productOrdering() {
 		Browser.openURL();
-		HeaderPage.selectfromStoreMenu("Куратори");
-		
+		HeaderPage.selectFromStoreMenu("НОВИНИ");
 	}
 	/*
 	@After
