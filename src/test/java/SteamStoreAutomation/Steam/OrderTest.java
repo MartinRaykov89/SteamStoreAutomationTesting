@@ -21,7 +21,7 @@ public class OrderTest {
 	public void setUp() {
 		Browser.openBrowser();
 	}
-	/*
+	
 	@Test
 	public void productOrdering() {
 		Browser.openURL();
@@ -33,11 +33,15 @@ public class OrderTest {
 		SearchPage.selectFirstResultFromContainerRows();
 		PurchasePage.addSimpleItem();
 	}
-	*/
+	
 	@Test
 	public void test() {
 		Browser.openURL();
-		LeftNavigationContainer.choiceByGerne("Екшъни");
+		HomePage.verifyHomePagetitle();
+		//LeftNavigationContainer.choiceByGerne("Екшъни");
+		System.out.println("example  ");
+		
+		
 	}
 	/*
 	@After

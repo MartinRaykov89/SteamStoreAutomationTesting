@@ -2,11 +2,12 @@ package SteamStoreAutomation.pages;
 
 import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import SteamStoreAutomation.utilities.Browser;
+import SteamStoreAutomation.utilities.Browser;;
 
 public class HomePage {
 	
@@ -24,7 +25,13 @@ public class HomePage {
 	private static By searchField = By.id("store_nav_search_term");
 	private static By searchButton = By.xpath("//*[@src = 'https://steamstore-a.akamaihd.net/public/images/blank.gif']");
 	
+	private static String homePageTitle = "Steam";
 	
+	public static void verifyHomePagetitle() {
+		String title = Browser.driver.getTitle();
+		System.out.println(title);
+		Assert.assertTrue(title.contains(homePageTitle));
+	}
 	
 	public static void search (String searchItem) {
 		Browser.driver.findElement(searchField).sendKeys(searchItem);
@@ -98,7 +105,8 @@ public class HomePage {
 		
 		for (WebElement opt : yourStoreOptions) {
 			if(opt.getText().trim().equalsIgnoreCase(option)) {
-				opt.click();				
+				opt.click();
+				
 			}
 		}	
 	}

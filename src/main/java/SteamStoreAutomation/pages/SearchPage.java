@@ -19,7 +19,7 @@ public class SearchPage {
 	private static By searchButton = By.xpath("//*[@type= 'submit']");
 	private static By sortByMenu = By.id("sort_by_dselect_container");
 	private static By sortByDropdawnMenu = By.xpath("//*[@id= 'sort_by_droplist']/li/a");
-	private static By resultContainerRows = By.xpath("//*[@id= 'search_result_container']/div/a");
+	//private static By resultContainerRows = By.xpath("//*[@id= 'search_result_container']/div/a");
 	private static By firstResultfromContainerRows = By.xpath("//*[@id= 'search_result_container']/div/a[1]");
 	
 	private static By narrowByTagMenu = By.xpath("//*[@id= 'TagFilter_Container']/div/span");
